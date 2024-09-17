@@ -11,6 +11,6 @@ builder.Services.AddSignalR();
 var app = builder.Build();
 app.UseCors("AllowAnyOrigin");
 app.MapHub<SimpleChatHub>("/simple");
-app.MapHub<AdvancedChatHub>("/advanced");
+app.MapHub<AdvancedChatHub>("/Chat");
 app.Run();
 
